@@ -34,6 +34,21 @@
         </button>
     </div>
 
+    <table>
+        <tr>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Number of Pages</th>
+            <th>Have Read?</th>
+        </tr>
+        <tr>
+            <td id="title-response"></td>
+            <td id="author-response"></td>
+            <td id="pages-response"></td>
+            <td id="have-read-response"></td>
+        </tr>
+    </table>
+
     <div class="modal modal--hidden">
         <div class="modal-content">
             <div class="close-bar">
@@ -41,17 +56,18 @@
             </div>
             <form id="submit-details">
               <div>
-                <input type="text" placeholder="Book Title"><br>
-                <input type="text" placeholder="Author"><br>
-                <input type="text" placeholder="Number of Pages"><br>
+                <input id="title" type="text" placeholder="Book Title"><br>
+                <input id="author" type="text" placeholder="Author"><br>
+                <input id="number-of-pages" type="text" placeholder="Number of Pages"><br>
                 <label for="have-read">Have Read?</label>
-                <input type="radio" id="have-read" value="have-read">
+                <input id="have-read" type="radio" id="have-read" value="have-read">
               </div>
               <button type="submit" id="submit" href="/">Submit</button>
             </form>
         </div>
     </div>
 
+    <div id="library-display"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
